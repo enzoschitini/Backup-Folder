@@ -58,18 +58,12 @@ A análise de personalidade do cliente ajuda uma empresa a modificar seu produto
 
 Precisa realizar clustering para resumir segmentos de clientes.
 
-### **Agradecimento**
+## Primeiras linhas do Dataset:
 
-O conjunto de dados para este projeto é fornecido pelo Dr. Omar Romero-Hernandez.
-
-### **Solução**
-
-Você pode obter ajuda no link a seguir para saber mais sobre a abordagem para resolver este problema.
-
-[Visite esta URL](https://thecleverprogrammer.com/2021/02/08/customer-personality-analysis-with-python/)
-
-### **Inspiração**
-
-boa aprendizagem….
-
-**Espero que goste deste conjunto de dados, por favor, não se esqueça de curtir este conjunto de dados**
+| ID   | Year_Birth | Education | Marital_Status | Income | Kidhome | Teenhome | Dt_Customer | Recency | MntWines | MntFruits | MntMeatProducts | MntFishProducts | MntSweetProducts | MntGoldProds | NumDealsPurchases | NumWebPurchases | NumCatalogPurchases | NumStorePurchases | NumWebVisitsMonth | AcceptedCmp3 | AcceptedCmp4 | AcceptedCmp5 | AcceptedCmp1 | AcceptedCmp2 | Complain | Z_CostContact | Z_Revenue | Response |
+|------|------------|-----------|----------------|--------|---------|----------|-------------|---------|----------|-----------|-----------------|-----------------|------------------|--------------|-------------------|-----------------|---------------------|-------------------|------------------|--------------|--------------|--------------|--------------|--------------|----------|---------------|-----------|----------|
+| 5524 | 1957       | Graduation| Single         | 58138  | 0       | 0        | 04-09-2012  | 58      | 635      | 88        | 546             | 172             | 88               | 88           | 3                 | 8               | 10                  | 4                 | 7                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 1         |
+| 2174 | 1954       | Graduation| Single         | 46344  | 1       | 1        | 08-03-2014  | 38      | 11       | 1         | 6               | 2               | 1                | 6            | 2                 | 1               | 1                   | 2                 | 5                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
+| 4141 | 1965       | Graduation| Together       | 71613  | 0       | 0        | 21-08-2013  | 26      | 426      | 49        | 127             | 111             | 21               | 42           | 1                 | 8               | 2                   | 10                | 4                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
+| 6182 | 1984       | Graduation| Together       | 26646  | 1       | 0        | 10-02-2014  | 26      | 11       | 4         | 20              | 10              | 3                | 5            | 2                 | 2               | 0                   | 4                 | 6                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
+| 5324 | 1981       | PhD       | Married        | 58293  | 1       | 0        | 19-01-2014  | 94      | 173      | 43        | 118             | 46              | 27               | 15           | 5                 | 5               | 3                   | 6                 | 5                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
