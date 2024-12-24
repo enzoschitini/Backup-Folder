@@ -1,6 +1,3 @@
-# Customer Personality Analysis
-Analysis of company's ideal customers
-
 ## **Sobre o conjunto de dados**
 
 ### **Contexto**
