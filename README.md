@@ -13,46 +13,61 @@ A análise de personalidade do cliente ajuda uma empresa a modificar seu produto
 
 ### **Conteúdo**
 
-**Atributos**
+### **Tabela: Pessoas**
+| **Coluna**        | **Descrição**                                                                         |
+|-------------------|---------------------------------------------------------------------------------------|
+| **ID**            | Identificador exclusivo do cliente.                                                  |
+| **Ano_Nascimento**| Ano de nascimento do cliente.                                                        |
+| **Educação**      | Nível de educação do cliente.                                                        |
+| **Estado civil**  | Estado civil do cliente.                                                             |
+| **Renda**         | Renda familiar anual do cliente.                                                     |
+| **Kidhome**       | Número de crianças na casa do cliente.                                               |
+| **Teenhome**      | Número de adolescentes na casa do cliente.                                           |
+| **Dt_Cliente**    | Data de inscrição do cliente na empresa.                                             |
+| **Ano**           | Ano da última compra do cliente.                                                     |
+| **Mês**           | Mês da última compra do cliente.                                                     |
+| **Dia**           | Dia da última compra do cliente.                                                     |
+| **Idade**         | Idade do cliente, calculada a partir do ano de nascimento e da data de inscrição.     |
+| **Recência**      | Número de dias desde a última compra do cliente.                                     |
+| **Reclamação**    | Indica se o cliente reclamou nos últimos 2 anos (1 para sim, 0 para não).            |
+| **Filhos**        | Número de filhos do cliente.                                                         |
+| **TamanhoFamília**| Tamanho total da família do cliente, incluindo ele mesmo e seus dependentes.          |
+| **EstáCasado**    | Indica se o cliente está casado (1 para sim, 0 para não).                            |
+| **Senioridade**   | Número de dias desde que o cliente se inscreveu na empresa.                          |
 
-**Pessoas**
+### **Tabela: Produtos**
+| **Coluna**          | **Descrição**                                                          |
+|---------------------|----------------------------------------------------------------------|
+| **MntWines**         | Valor gasto em vinho nos últimos 2 anos.                             |
+| **MntFruits**        | Valor gasto em frutas nos últimos 2 anos.                            |
+| **MntMeatProducts**  | Valor gasto em carne nos últimos 2 anos.                             |
+| **MntFishProducts**  | Valor gasto em peixe nos últimos 2 anos.                             |
+| **MntSweetProducts** | Valor gasto em doces nos últimos 2 anos.                             |
+| **MntGoldProds**     | Valor gasto em ouro nos últimos 2 anos.                              |
+| **TotalMntSpent**    | Total gasto em todos os produtos nos últimos 2 anos.                 |
+| **TotalCompras**     | Total de compras feitas nos últimos 2 anos.                          |
+| **ValorMédiaCompra** | Valor médio das compras feitas nos últimos 2 anos.                   |
 
-- **ID**: identificador exclusivo do cliente
-- **Ano_Nascimento**: ano de nascimento do cliente
-- **Educação**: nível de educação do cliente
-- **Estado civil**: estado civil do cliente
-- **Renda**: renda familiar anual do cliente
-- **Kidhome**: número de crianças na casa do cliente
-- **Teenhome**: número de adolescentes na casa do cliente
-- **Dt_Cliente**: data de inscrição do cliente na empresa
-- **Recência**: número de dias desde a última compra do cliente
-- **Reclamação**: 1 se o cliente reclamou nos últimos 2 anos, 0 caso contrário
+### **Tabela: Promoção**
+| **Coluna**            | **Descrição**                                                                  |
+|-----------------------|-------------------------------------------------------------------------------|
+| **NumDealsPurchases** | Número de compras feitas com desconto.                                       |
+| **AcceptedCmp1**      | Indica se o cliente aceitou a oferta na 1ª campanha (1 para sim, 0 para não). |
+| **AcceptedCmp2**      | Indica se o cliente aceitou a oferta na 2ª campanha (1 para sim, 0 para não). |
+| **AcceptedCmp3**      | Indica se o cliente aceitou a oferta na 3ª campanha (1 para sim, 0 para não). |
+| **AcceptedCmp4**      | Indica se o cliente aceitou a oferta na 4ª campanha (1 para sim, 0 para não). |
+| **AcceptedCmp5**      | Indica se o cliente aceitou a oferta na 5ª campanha (1 para sim, 0 para não). |
+| **Resposta**          | Indica se o cliente aceitou a oferta na última campanha (1 para sim, 0 para não).|
 
-**Produtos**
+### **Tabela: Local**
+| **Coluna**             | **Descrição**                                                   |
+|------------------------|---------------------------------------------------------------|
+| **NumWebPurchases**     | Número de compras feitas pelo site da empresa.               |
+| **NumCatalogPurchases** | Número de compras feitas usando um catálogo.                 |
+| **NumStorePurchases**   | Número de compras feitas diretamente em lojas.               |
+| **NumWebVisitsMonth**   | Número de visitas ao site da empresa no último mês.          |
+| **WebVsStorePurchases** | Relação entre compras feitas no site e em lojas físicas.     |
 
-- **MntWines**: valor gasto em vinho nos últimos 2 anos
-- **MntFruits**: valor gasto em frutas nos últimos 2 anos
-- **MntMeatProducts**: valor gasto em carne nos últimos 2 anos
-- **MntFishProducts**: valor gasto em peixe nos últimos 2 anos
-- **MntSweetProducts**: valor gasto em doces nos últimos 2 anos
-- **MntGoldProds**: valor gasto em ouro nos últimos 2 anos
-
-**Promoção**
-
-- **NumDealsPurchases**: número de compras feitas com desconto
-- **AcceptedCmp1**: 1 se o cliente aceitou a oferta na 1ª campanha, 0 caso contrário
-- **AcceptedCmp2**: 1 se o cliente aceitou a oferta na 2ª campanha, 0 caso contrário
-- **AcceptedCmp3**: 1 se o cliente aceitou a oferta na 3ª campanha, 0 caso contrário
-- **AcceptedCmp4**: 1 se o cliente aceitou a oferta na 4ª campanha, 0 caso contrário
-- **AcceptedCmp5**: 1 se o cliente aceitou a oferta na 5ª campanha, 0 caso contrário
-- **Resposta**: 1 se o cliente aceitou a oferta na última campanha, 0 caso contrário
-
-**Local**
-
-- **NumWebPurchases**: número de compras feitas pelo site da empresa
-- **NumCatalogPurchases**: número de compras feitas usando um catálogo
-- **NumStorePurchases**: número de compras feitas diretamente em lojas
-- **NumWebVisitsMonth**: número de visitas ao site da empresa no último mês
 
 ### **Alvo**
 

@@ -64,3 +64,44 @@ Precisa realizar clustering para resumir segmentos de clientes.
 | 4141 | 1965       | Graduation| Together       | 71613  | 0       | 0        | 21-08-2013  | 26      | 426      | 49        | 127             | 111             | 21               | 42           | 1                 | 8               | 2                   | 10                | 4                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
 | 6182 | 1984       | Graduation| Together       | 26646  | 1       | 0        | 10-02-2014  | 26      | 11       | 4         | 20              | 10              | 3                | 5            | 2                 | 2               | 0                   | 4                 | 6                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
 | 5324 | 1981       | PhD       | Married        | 58293  | 1       | 0        | 19-01-2014  | 94      | 173      | 43        | 118             | 46              | 27               | 15           | 5                 | 5               | 3                   | 6                 | 5                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
+
+
+# **Customer Personality Analysis**
+
+[Customer Personality Analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)
+
+[Customer Segmentation Clustering by Kevin](https://www.kaggle.com/code/kebinnuil/customer-segmentation-clustering-by-kevin)
+
+[🛍 Customer Analysis| EDA | Profiling | KMeans](https://www.kaggle.com/code/visitnehaverma/customer-analysis-eda-profiling-kmeans)
+
+[💼 Customer Personality Analysis: 🎯 Unsupervised](https://www.kaggle.com/code/sajjadalishah/customer-personality-analysis-unsupervised)
+
+[Customer EDA | Clustering | Strategies](https://www.kaggle.com/code/marcelobatalhah/customer-eda-clustering-strategies)
+
+[Clustering | Customer personality analysis](https://www.kaggle.com/code/a7madmostafa/clustering-customer-personality-analysis)
+
+[market segmentation analysis](https://www.kaggle.com/code/taylorwill/market-segmentation-analysis)
+
+[Customer Personality Analysis with Python | Thecleverprogrammer](https://thecleverprogrammer.com/2021/02/08/customer-personality-analysis-with-python/)
+
+- Datasets
+    
+    [Customer Segmentation: Clustering 🛍️🛒🛒](https://www.kaggle.com/code/karnikakapoor/customer-segmentation-clustering)
+    
+    [Wine Dataset for Clustering](https://www.kaggle.com/datasets/harrywang/wine-dataset-for-clustering)
+    
+    [Credit Card Customer Data](https://www.kaggle.com/datasets/aryashah2k/credit-card-customer-data)
+    
+    [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
+    
+    [Mall Customers Segmentation](https://www.kaggle.com/datasets/abdallahwagih/mall-customers-segmentation)
+    
+    [Bank Customer Segmentation (1M+ Transactions)](https://www.kaggle.com/datasets/shivamb/bank-customer-segmentation)
+    
+    [Social Media Usage and Emotional Well-Being](https://www.kaggle.com/datasets/emirhanai/social-media-usage-and-emotional-well-being)
+    
+    [Customer Clustering](https://www.kaggle.com/datasets/dev0914sharma/customer-clustering)
+    
+    [Fish species sampling data - legnth and weight](https://www.kaggle.com/datasets/taweilo/fish-species-sampling-weight-and-height-data)
+    
+    [Search | Kaggle](https://www.kaggle.com/search?q=clustering+dataset+in%3Adatasets)
