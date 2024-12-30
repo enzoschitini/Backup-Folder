@@ -75,10 +75,51 @@ Precisa realizar clustering para resumir segmentos de clientes.
 
 ## Primeiras linhas do Dataset:
 
-| ID   | Year_Birth | Education | Marital_Status | Income | Kidhome | Teenhome | Dt_Customer | Recency | MntWines | MntFruits | MntMeatProducts | MntFishProducts | MntSweetProducts | MntGoldProds | NumDealsPurchases | NumWebPurchases | NumCatalogPurchases | NumStorePurchases | NumWebVisitsMonth | AcceptedCmp3 | AcceptedCmp4 | AcceptedCmp5 | AcceptedCmp1 | AcceptedCmp2 | Complain | Z_CostContact | Z_Revenue | Response |
-|------|------------|-----------|----------------|--------|---------|----------|-------------|---------|----------|-----------|-----------------|-----------------|------------------|--------------|-------------------|-----------------|---------------------|-------------------|------------------|--------------|--------------|--------------|--------------|--------------|----------|---------------|-----------|----------|
-| 5524 | 1957       | Graduation| Single         | 58138  | 0       | 0        | 04-09-2012  | 58      | 635      | 88        | 546             | 172             | 88               | 88           | 3                 | 8               | 10                  | 4                 | 7                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 1         |
-| 2174 | 1954       | Graduation| Single         | 46344  | 1       | 1        | 08-03-2014  | 38      | 11       | 1         | 6               | 2               | 1                | 6            | 2                 | 1               | 1                   | 2                 | 5                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
-| 4141 | 1965       | Graduation| Together       | 71613  | 0       | 0        | 21-08-2013  | 26      | 426      | 49        | 127             | 111             | 21               | 42           | 1                 | 8               | 2                   | 10                | 4                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
-| 6182 | 1984       | Graduation| Together       | 26646  | 1       | 0        | 10-02-2014  | 26      | 11       | 4         | 20              | 10              | 3                | 5            | 2                 | 2               | 0                   | 4                 | 6                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
-| 5324 | 1981       | PhD       | Married        | 58293  | 1       | 0        | 19-01-2014  | 94      | 173      | 43        | 118             | 46              | 27               | 15           | 5                 | 5               | 3                   | 6                 | 5                | 0            | 0            | 0            | 0            | 0            | 3        | 11            | 0         |
+| ID   | Year_Birth | Education | Marital_Status | Income | Kidhome | Teenhome | Dt_Customer | Year | Month | Day | Age | Recency | Complain | Children | FamilySize | IsMarried | SeniorityDays | MntWines | MntFruits | MntMeatProducts | MntFishProducts | MntSweetProducts | MntGoldProds | TotalMntSpent | TotalPurchases | AvgPurchaseValue | NumDealsPurchases | AcceptedCmp1 | AcceptedCmp2 | AcceptedCmp3 | AcceptedCmp4 | AcceptedCmp5 | AcceptedAnyCampaign | Response | NumWebPurchases | NumCatalogPurchases | NumStorePurchases | NumWebVisitsMonth | WebVsStorePurchases |
+|------|------------|-----------|----------------|--------|---------|----------|-------------|------|-------|-----|-----|---------|----------|----------|------------|-----------|---------------|----------|-----------|------------------|-----------------|------------------|--------------|---------------|----------------|------------------|-------------------|--------------|--------------|--------------|--------------|--------------|----------------------|----------|-----------------|--------------------|-------------------|------------------|---------------------|
+| 5524 | 1957       | Graduation | Single         | 58138  | 0       | 0        | 2012-09-04  | 2012 | 9     | 4   | 57  | 58      | 0        | 0        | 0          | 0         | 663           | 635      | 88        | 546              | 172             | 88               | 88           | 1617          | 25             | 64               | 3                 | 0            | 0            | 0            | 0            | 0            | 1                    | 8        | 10              | 4                  | 7                 | 2                |
+| 2174 | 1954       | Graduation | Single         | 46344  | 1       | 1        | 2014-03-08  | 2014 | 3     | 8   | 60  | 38      | 0        | 2        | 2          | 0         | 113           | 11       | 1         | 6                | 2               | 1                | 6            | 27           | 6              | 4                | 2                 | 0            | 0            | 0            | 0            | 0            | 0                    | 1        | 1               | 2                  | 5                 | 0                |
+| 4141 | 1965       | Graduation | Together       | 71613  | 0       | 0        | 2013-08-21  | 2013 | 8     | 21  | 49  | 26      | 0        | 0        | 1          | 1         | 312           | 426      | 49        | 127              | 111             | 21               | 42           | 776           | 21             | 36               | 1                 | 0            | 0            | 0            | 0            | 0            | 0                    | 8        | 2               | 10                 | 4                 | 0                |
+| 6182 | 1984       | Graduation | Together       | 26646  | 1       | 0        | 2014-02-10  | 2014 | 2     | 10  | 30  | 26      | 0        | 1        | 2          | 1         | 139           | 11       | 4         | 20               | 10              | 3                | 5            | 53           | 8              | 6                | 2                 | 0            | 0            | 0            | 0            | 0            | 0                    | 2        | 0               | 4                  | 6                 | 0                |
+| 5324 | 1981       | PhD        | Married        | 58293  | 1       | 0        | 2014-01-19  | 2014 | 1     | 19  | 33  | 94      | 0        | 1        | 2          | 1         | 161           | 173      | 43        | 118              | 46              | 27               | 15           | 422           | 19             | 22               | 5                 | 0            | 0            | 0            | 0            | 0            | 0                    | 5        | 3               | 6                  | 5                 | 0                |
+
+
+# **Links:**
+
+[Customer Personality Analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)
+
+[Customer Segmentation Clustering by Kevin](https://www.kaggle.com/code/kebinnuil/customer-segmentation-clustering-by-kevin)
+
+[🛍 Customer Analysis| EDA | Profiling | KMeans](https://www.kaggle.com/code/visitnehaverma/customer-analysis-eda-profiling-kmeans)
+
+[💼 Customer Personality Analysis: 🎯 Unsupervised](https://www.kaggle.com/code/sajjadalishah/customer-personality-analysis-unsupervised)
+
+[Customer EDA | Clustering | Strategies](https://www.kaggle.com/code/marcelobatalhah/customer-eda-clustering-strategies)
+
+[Clustering | Customer personality analysis](https://www.kaggle.com/code/a7madmostafa/clustering-customer-personality-analysis)
+
+[market segmentation analysis](https://www.kaggle.com/code/taylorwill/market-segmentation-analysis)
+
+[Customer Personality Analysis with Python | Thecleverprogrammer](https://thecleverprogrammer.com/2021/02/08/customer-personality-analysis-with-python/)
+
+- Datasets
+    
+    [Customer Segmentation: Clustering 🛍️🛒🛒](https://www.kaggle.com/code/karnikakapoor/customer-segmentation-clustering)
+    
+    [Wine Dataset for Clustering](https://www.kaggle.com/datasets/harrywang/wine-dataset-for-clustering)
+    
+    [Credit Card Customer Data](https://www.kaggle.com/datasets/aryashah2k/credit-card-customer-data)
+    
+    [Household Electric Power Consumption](https://www.kaggle.com/datasets/uciml/electric-power-consumption-data-set)
+    
+    [Mall Customers Segmentation](https://www.kaggle.com/datasets/abdallahwagih/mall-customers-segmentation)
+    
+    [Bank Customer Segmentation (1M+ Transactions)](https://www.kaggle.com/datasets/shivamb/bank-customer-segmentation)
+    
+    [Social Media Usage and Emotional Well-Being](https://www.kaggle.com/datasets/emirhanai/social-media-usage-and-emotional-well-being)
+    
+    [Customer Clustering](https://www.kaggle.com/datasets/dev0914sharma/customer-clustering)
+    
+    [Fish species sampling data - legnth and weight](https://www.kaggle.com/datasets/taweilo/fish-species-sampling-weight-and-height-data)
+    
+    [Search | Kaggle](https://www.kaggle.com/search?q=clustering+dataset+in%3Adatasets)
